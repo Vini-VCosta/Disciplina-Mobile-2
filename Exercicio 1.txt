@@ -1,0 +1,72 @@
+Atividade 1:
+
+void main() {
+  
+  String nome = "Vinicius";
+  String sobreNome = "Costa";
+  String endereco = "Rua Exemplo N 366";
+  int idade = 19;
+  
+  print("Seu nome é: $nome"
+        "\nSeu sobrenome é: $sobreNome"
+        "\nSeu endereço: $endereco"
+        "\nSua idade: $idade");
+}
+
+Atividade 2:
+
+void main() {
+  
+  double ingresso = 10;
+  int numeroIngressos = 4;
+  String nomeFilme = "Vingadores";
+  
+  double valorTotal = ingresso * numeroIngressos;
+  
+  print("Nome do Filme: $nomeFilme"
+        "\nNumero de entradas: $numeroIngressos"
+        "\nValor Total a pagar: $valorTotal Reais");
+
+}
+
+Atividade 3:
+
+void main() {
+  
+  double bMaior = 2;
+  double bMenor = 5;
+  double altura = 10;
+  
+  double areaTotal = (((bMaior + bMenor)*altura) / 2);
+  
+  print("Base Maior: $bMaior"
+        "\nBase Menor: $bMenor"
+        "\nAltura: $altura"
+        "\nArea Total: $areaTotal");
+}
+
+Atividade 4:
+
+void main() {
+  
+  double lado = 2;
+  
+  double areaTotal = (lado*2);
+  
+  print("Base: $lado"
+        "\nAltura: $lado"
+        "\nArea Total: $areaTotal");
+}
+
+Atividade 5:
+
+void main() {
+  
+  String nome = "Viniciu";
+  
+  if(nome == "Vinicius"){
+      print("É você que estou procurando!!!");  
+  }else{
+    print("Não é você que procuro, seus nomes não são o mesmo!!!");
+  }
+}
