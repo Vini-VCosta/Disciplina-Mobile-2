@@ -1,0 +1,342 @@
+Atividade 1:
+Escreva um procedimento que recebe as 3 notas de um aluno por parâmetro e uma letra.
+Se a letra for A o procedimento calcula a média aritmética das notas do aluno, se for B,
+a sua média ponderada (pesos: 5, 3 e 2) e se for C, a sua média harmônica. 
+A média calculada também deve retornar por parâmetro.
+
+void main() {
+  
+  double n1 = 1;
+  double n2 = 1;
+  double n3 = 1;
+  
+  String letra = "E";
+  
+  switch (letra) {
+    case "A":
+      print((n1+n2+n3)/3);
+      break;
+      
+    case "B":
+      print(((n1*5)+(n2*3)+(n3*2))/(5+3+2));
+      break;
+      
+    case "C":
+      print("");
+      break;
+ 
+    default:
+      print("Erro!!!");
+  } 
+  
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 2:
+Escreva uma função que receba dois números inteiros retorne o menor número.
+
+void main() {
+  
+   dynamic verificarMenor(){
+     
+    double n1 = 5;
+    double n2 = 7;
+  
+    if(n1 < n2){
+      print("O menor numero é o $n1");
+    }else if(n2 < n1){
+      print("O menor numero é o $n2");
+    }else{
+      print("Não há numero menor");
+    }
+  }
+  
+  verificarMenor();
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 3:
+Faça uma função que recebe por parâmetro um valor inteiro e positivo e
+retorna o valor lógico Verdadeiro caso o valor seja primo e Falso em caso contrário
+
+void main() { 
+  verificarPrimo(-5);
+}
+
+void verificarPrimo(double n){
+  
+  if(n > 0){
+    if(n == 2 || n == 3 || n == 5 || n == 7 || n == 11 || n == 13){
+     print("O numero é um primo entre e 2 a 13 \nSeu número é: $n");
+    }else if(n == 17 || n == 19 || n == 23 || n == 29 || n == 31 || n == 37){
+      print("O numero é um primo entre e 13 a 37 \nSeu número é: $n");
+    }else if(n == 41 || n == 43 || n == 47 || n == 53 || n == 59 || n == 61){
+      print("O numero é um primo entre e 41 a 61 \nSeu número é: $n");
+    }else if(n == 67 || n == 71 || n == 73 || n == 79 || n == 83 || n == 89 || n == 97){
+      print("O numero é um primo entre e 67 a 97 \nSeu número é: $n");
+    }else{
+      print("Esse numero não é primo \nSeu número é: $n");
+    }
+  }else{
+    print("O valor escolhido não é compativel com sistema!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 4:
+Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou negativo.
+A função deve retornar um valor booleano
+
+void main() {
+  
+   dynamic verificarPositivo(){
+     
+     double n = -10;
+     
+    if(n == 0){
+      print("Você sabe que 0 não é nem positivo nem negativo!!!");
+    }else if(n > 0){
+      print("O numero é positivo \nSeu número: $n");
+     }else{
+      print("O numero é negativo \nSeu número: $n");
+     }
+    }
+  verificarPositivo();
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 5:
+Faça uma função que leia um número não determinado de valores positivos e retorna a média aritmética dos mesmos.
+
+void main() {
+  
+  calcularMedia(10,23,34,62);
+  
+}
+void calcularMedia(double n1,double n2,double n3,double n4){
+
+  if(n1 > 0 || n2 > 0 || n3 > 0 || n4 > 0){
+    print((n1+n2+n3+n4)/4);
+  }else{
+   print("Número não suportado no sistema!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 6:
+Escreva uma função que recebe, por parâmetro, receba 2 valores inteiros e positivo e retorna o somatório desse valor.
+
+void main() {
+  
+  calcularValor(150,230);
+
+}
+void calcularValor(int n1,int n2){
+
+  if(n1 > 0 && n2 > 0){
+    print(n1+n2);
+  }else{
+   print("Número não suportado no sistema!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atiivade 7:
+Faça uma função que recebe a média final de um aluno por parãmetro e retorna o seu conceito
+
+void main() {
+  
+  verificarConceito(8.4);
+  
+}
+void verificarConceito(double media){
+
+  if(media >= 0 && media <= 4.9){
+    print("Conceito D");
+  }else if(media >= 5 && media <= 6.9){
+    print("Conceito C");
+  }else if(media >= 7 && media <= 8.9){
+    print("Conceito B");
+  }else if(media >= 9 && media <= 10){
+    print("Conceito A");
+  }else{
+   print("Número não suportado no sistema!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 8:
+Faça uma função que recebe a idade de um nadador por parâmetro e retorna , também por parâmetro, a categoria desse nadador de acordo com a idade
+
+void main() {
+  
+  verificarCategoria(15);
+  
+}
+void verificarCategoria(int media){
+
+  if(media >= 5 && media <= 7){
+    print("Categoria Infantil A");
+  }else if(media >= 8 && media <= 10){
+    print("Categoria Infantil B");
+  }else if(media >= 11 && media <= 13){
+    print("Categoria Juvenil A");
+  }else if(media >= 14 && media <= 17){
+    print("Categoria Juvenil A");
+  }else if(media >= 18){
+    print("Categoria Adulta");
+  }else{
+   print("Número não suportado no sistema!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 9:
+Faça uma função que recebe um valor inteiro e verifica se o valor é par. A função deve retornar 1 se o número for par e 0 se for ímpar
+
+void main() {
+  
+   dynamic verificarParImpar(){
+     
+     int n = 6;
+  
+     if(n == 0){ 
+      print("Esse número é 0! \nSeu safadinho!");
+     }else if(n % 2 == 0){
+      print("1: O numero é par \nSeu número: $n");
+     }else if(n % 2 == 1){
+      print("0: O numero é impar \nSeu número: $n");
+     }else{
+      print("Esse número é 0! Seu safadinho!");
+     }
+    }
+  verificarParImpar();
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 10:
+Fazer um programa que receba 2 números e informe:
+ a) A soma dos números;
+ b) O produto do primeiro número pelo quadrado do segundo;
+ c) O quadrado do primeiro número;
+ d) O triplo do dobro da soma dos dois números
+ e) A metade do triplo do dobro da soma dos dois números
+ f) O módulo do primeiro número.
+
+import 'dart:math';
+void main() {
+  
+   dynamic somarNumeros(){
+     
+     double n1 = 7;
+     double n2 = 10;
+    
+     print(n1+n2);
+     //Aqui usamos pow(x,x) ao invez do math.pow e sqrt() o invez do math.srqt
+     print(pow(n1,(sqrt(n2))));
+     
+     //Aqui usamos pow(x,x) ao invez do math.pow
+     print(sqrt(n1));
+     
+     print(3*(2*(n1+n2)));
+     
+     print((3*(2*(n1+n2)))/2);
+     
+     //Ainda não descobri o substituto do abs
+     print(n1);
+   }    
+  somarNumeros();
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 11:
+Faça um programa que leia dois valores e imprima:
+  a) se o primeiro valor for menor que o segundo, a lista de valores do primeiro até
+o segundo;
+  b) se o primeiro valor for menor que o segundo a lista de valores do segundo até
+o primeiro em ordem decrescente;
+  c) se ambos forem iguais a mensagem "valores iguais".
+
+void main() {
+  
+   dynamic imprimirNumeros(){
+     
+     double n1 = 7;
+     double n2 = 10;
+    
+     //Falta aprender o ArrayList
+     if(n1 < n2){ 
+      print("Aqui ira mostrar uma lista do primeiro numero até o segundo");
+     //Falta aprender o ArrayList
+     }else if(n2 < n1){
+      print("Aqui ira mostrar uma lista do segundo até o primeiro");
+     }else if(n1 == n2){
+      print("Esses valores são iguais");
+     }else{
+      print("Esse número não é compativel com o sistema!");
+     }
+    }
+  imprimirNumeros();
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+Atividade 12:
+Crie uma calculadora utilizando funções
+
+import 'dart:math';
+void main() {
+  
+  calcularNumeros(15,49,"math.pow1");
+  
+}
+void calcularNumeros(double n1, double n2,String operador){
+
+    switch(operador)
+    {
+      case '+':
+       print(n1 + n2);
+      break;
+      
+      case '-':
+       print(n1 - n2);
+      break;
+      
+      case '/':
+        print(n1 / n2);
+      break;
+      
+      case '*':
+        print(n1 * n2);
+      break;
+      
+      case 'math.pow1':
+        print(pow (n1,n2));
+      break;
+        
+      case 'math.pow2':
+        print(pow (n2,n1));
+      break;
+        
+      case 'math.sqrt1':
+        print(sqrt(n1));
+      break;
+        
+      case 'math.sqrt2':
+        print(sqrt(n2));
+      break;
+        
+      default:
+        print('Operação Invalida!');
+  } 
+}
