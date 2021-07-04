@@ -1,0 +1,45 @@
+Atividade 1:
+Dada uma variável i iniciada com valor 0 que é incrementada ao final de cada loop de um laço de repetição.
+Qual é a condição de execução deste laço quando o mesmo tem a função de imprimir todos os números de 0 a 100?
+
+A condição inicial é: int i = 0;
+A condição é:  i <= 6; 
+O loop é: i++;
+///////////////////////////////////////////////////////////////////////////
+
+Atividade 2:
+
+void main() {
+  List list = [501,61,325,512,985,624,774,865,904];
+  
+  print("Todos os numeros: $list");
+  
+  print("\nMaior numero");
+  print(list.reduce((curr,next) => curr > next? curr: next));
+  
+  print("Menor numero");
+  print(list.reduce((curr, next) => curr < next? curr: next));
+  
+  print("Primeiro numero");
+  print(list.reduce((curr, next) => curr != next? curr: next));
+  
+  print("Ultimo numero");
+  print(list.reduce((curr, next) => curr == next? curr: next));
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+Atividade 3:
+
+void main() {
+  int n1 = 5;
+  int n2 = 10;
+  int resultado = 0;
+  
+  do{
+    print(resultado);
+    resultado = n1 * n2;
+    n1++;
+  }
+  while(resultado <= 1200);
+}
